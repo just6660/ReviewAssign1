@@ -19,6 +19,7 @@ public class Momentum {
         momentum = mass * velocity;
         
         System.out.println(String.format("The object's momentum is %.2f kg * m/s", momentum));
+        System.out.println("Program ended");
     }
     
 }
