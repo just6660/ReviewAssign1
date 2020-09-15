@@ -10,6 +10,20 @@ public class PizzaCost1 {
         
         final double labour = 1.5;
         final double heat = 0.75;
+        double basicprice, size, toppingprice, total;
+        int toppings;
+        
+        System.out.print("Enter the size of your pizza in inches > ");
+        size = s.nextDouble();
+        basicprice =  size * 0.75;
+        
+        System.out.print("Enter the number of toppings >");
+        toppings = s.nextInt();
+        toppingprice = toppings * 0.75;
+        
+        total = toppingprice + basicprice;
+        
+        System.out.println(String.format("The price of your pizza is $%.2f.", total));
     }
     
 }
