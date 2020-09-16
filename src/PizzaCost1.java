@@ -15,7 +15,7 @@ public class PizzaCost1 {
         
         System.out.print("Enter the size of your pizza in inches > ");
         size = s.nextDouble();
-        basicprice =  size * 0.75;
+        basicprice =  size * 0.5;
         
         System.out.print("Enter the number of toppings >");
         toppings = s.nextInt();
