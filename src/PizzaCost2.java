@@ -212,7 +212,7 @@ public class PizzaCost2 extends javax.swing.JFrame {
             return;
         }
         
-        basicprice = size * 0.75;
+        basicprice = size * 0.5;
         toppingprice = toppings * 0.75;
         
         total = toppingprice + basicprice + labour + heat;
