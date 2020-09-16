@@ -217,9 +217,9 @@ public class PizzaCost2 extends javax.swing.JFrame {
         
         total = toppingprice + basicprice + labour + heat;
         
-        toppingbox.setText("$" + toppingprice);
-        ingredientbox.setText("$" + basicprice);
-        totalbox.setText("$"+total);
+        toppingbox.setText(String.format("$%.2f",toppingprice));
+        ingredientbox.setText(String.format("$%.2f",basicprice));
+        totalbox.setText(String.format("$%.2f",total));
         
     }//GEN-LAST:event_costbtnActionPerformed
 
