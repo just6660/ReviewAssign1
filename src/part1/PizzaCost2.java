@@ -1,3 +1,5 @@
+package part1;
+
 
 import javax.swing.JOptionPane;
 
