@@ -21,7 +21,7 @@ public class PizzaCost1 {
         toppings = s.nextInt();
         toppingprice = toppings * 0.75;
         
-        total = toppingprice + basicprice;
+        total = toppingprice + basicprice + labour + heat;
         
         System.out.println(String.format("The price of your pizza is $%.2f.", total));
     }
