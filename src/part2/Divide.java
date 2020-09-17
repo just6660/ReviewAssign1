@@ -1,21 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package part2;
 
-/**
- *
- * @author just6660
- */
+import java.util.Scanner;
+
 public class Divide {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int num1, num2, big, small,answer, remainder;
+        
+        Scanner s = new Scanner(System.in);
+        
+        System.out.print("Enter the first number: ");
+        num1 = s.nextInt();
+        
+        System.out.print("Enter the second number: ");
+        num2 = s.nextInt();
+        
+        big = Math.max(num1, num2);
+        small = Math.min(num1,num2);
+        
+        answer = big/small;
+        remainder = big%small;
+        
+        System.out.format("%d divided by %d is %dr%d\n", big, small, answer, remainder);
+               
     }
     
 }
