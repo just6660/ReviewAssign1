@@ -1,21 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package part2;
 
-/**
- *
- * @author just6660
- */
+import java.util.Scanner;
+
 public class PowerChart {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner s = new Scanner(System.in);
+        
+        int exponent, answer = 0;
+        
+        System.out.print("Enter a number between 0 and 10: ");
+        exponent = s.nextInt();
+        
+        
+        System.out.println("X\t\t2^X");
+        System.out.println("=\t\t====");
+        
+        for (int i = 0; i <= exponent; i++) {
+            answer = (int)Math.pow(2,i);
+            System.out.format("%d\t\t%d\n",i,answer);
+            
+        }
+        
+        
+        
     }
     
 }
